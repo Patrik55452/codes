@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: none; */
+}
+
+/* NAVIGATION MENU */
+
+.navigation {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: red;
+  font-weight: 800;
+  text-shadow: rgba(89, 79, 79, 0.641) 2px 2px 2px;
+  display: flex;
+  margin: 0 auto;
+}
+/* HOVER PRO MENU */
+a:hover {
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.8s ease 0.1s;
+}
+
+#icon-menu {
+  display: none;
+}
+/* QUERY PRO MOBIL (NAVIGATION MENU) */
+
+@media (max-width: 480px) {
+  a {
+    display: none;
+    flex-direction: column;
+  }
+  #icon-menu {
+    display: flex;
+  }
+}
+
+/* BANNER-SECTION */
+
+.banner-section {
+  height: 170px;
+  background: url(IMAGE/GIF\ SKATE.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  border: 3px solid red;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
